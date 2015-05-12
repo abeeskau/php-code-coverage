@@ -78,6 +78,10 @@ class PHP_CodeCoverage_Report_Crap4j
 
                     if (!empty($class['package']['namespace'])) {
                         $namespace = $class['package']['namespace'];
+                        $methodNode->appendChild($document->createElement('ifpackage', $namespace));
+                    }
+                    else {
+                        $methodNode->appendChild($document->createElement('elsepackage', $namespace));
                     }
 
                     $methodNode->appendChild($document->createElement('package', $namespace));
