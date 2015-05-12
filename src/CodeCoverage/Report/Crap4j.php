@@ -84,7 +84,7 @@ class PHP_CodeCoverage_Report_Crap4j
                         $methodNode->appendChild($document->createElement('elsepackage', $namespace));
                     }
 
-                    $methodNode->appendChild($document->createElement('package', $namespace));
+                    $methodNode->appendChild($document->createElement('acbpackage', $namespace));
                     $methodNode->appendChild($document->createElement('className', $className));
                     $methodNode->appendChild($document->createElement('methodName', $methodName));
                     $methodNode->appendChild($document->createElement('methodSignature', htmlspecialchars($method['signature'])));
